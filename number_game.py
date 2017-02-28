@@ -33,3 +33,36 @@ if guess == number:
 if guess != number:
     number = str(number)    
     print "Nope. The number I was thinkking of was %s" % number
+    print "Better luck next time!"
+
+round_2 = raw_input("Want to try again? - y or n").lower
+
+if round_2 == "y"
+    print "OK, here we go... I am thinking of a number between 1 and 50"
+
+number_2 = random.randint(1,50)
+    while guesses_taken_2 < 6:
+    print "Take a guess!"
+    guess_2 = input()
+    guess_2 = int(guess_2)
+
+    guesses_taken_2 = guesses_taken_2 + 1
+
+    if guess_2 < number_2:
+        print "Your guess is too low..."
+
+    if guess_2 > number_2:
+        print "Your guess is too high..."
+
+    if guess_2 == number_2:
+        break
+if guess_2 == number_2:
+    guesses_taken_2 = str(guesses_taken_2)
+    print "Way to go %s! You guessed the correct number in %s guesses" % (name, 
+        guesses_taken_2)
+if guess_2 != number_2:
+    number_2 = str(number_2)    
+    print "Nope. The number I was thinkking of was %s" % number_2
+    print "I'm tired, you should find a new game"
+
+
