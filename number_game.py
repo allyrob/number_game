@@ -2,6 +2,7 @@
 import random
 
 guesses_taken = 0
+guesses_taken_2 = 0
 
 name = raw_input("Hello! What is your name? ")
 
@@ -35,13 +36,17 @@ if guess != number:
     print "Nope. The number I was thinkking of was %s" % number
     print "Better luck next time!"
 
-round_2 = raw_input("Want to try again? - y or n").lower
+round2 = int(raw_input("Want to try again? - type 1 for yes and 2 for no"))
 
-if round_2 == "y"
+if round2 == 1:
     print "OK, here we go... I am thinking of a number between 1 and 50"
+elif round2 == 2:
+    print "Thanks for playing, use CTRL+ C to exit"
+    
+
 
 number_2 = random.randint(1,50)
-    while guesses_taken_2 < 6:
+while guesses_taken_2 < 5:
     print "Take a guess!"
     guess_2 = input()
     guess_2 = int(guess_2)
